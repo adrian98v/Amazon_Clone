@@ -1,0 +1,27 @@
+.basket_product {
+    display: flex;
+}
+
+.basket_product_image {
+    width: 50%;
+    height: 220px;
+    object-fit: contain;
+}
+
+.basket_product_info{
+    width: 250px;
+}
+.basket_product_rating {
+    display: flex;
+}
+
+.basket_product_button {
+    background: linear-gradient(#f7a950, #e9a348);
+    border: 1px rgb(114, 70, 20) solid;
+    height: 20px;
+    border-radius: 5%;
+}
+
+.basket_product_button:active{
+    background: linear-gradient(#e29842, #c48532);
+}

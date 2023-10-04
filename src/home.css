@@ -1,0 +1,29 @@
+
+.home_image {
+    width: 100%;
+    position: absolute;
+    z-index:-10;
+    mask-image: linear-gradient(rgba(0, 0, 0, 1), transparent);
+    top: 0;
+    min-width: 900px
+}
+
+.home_row_one {
+    max-width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 15px;
+    margin-bottom: 15px;
+    margin-top: 250px;
+}
+
+.home_row_two, .home_row_three {
+    max-width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+

@@ -1,0 +1,120 @@
+.orders_filters{
+    width: 20%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.959);
+    position: fixed;
+    top: 40px;
+    min-width: 210px;
+
+}
+
+.orders_first_container{
+    min-width: 600px;
+    max-width: 60%;
+    margin: 0px auto;
+    padding-bottom: 50px;
+    margin-left: 30%;
+    position: inherit;
+    min-height: 80vh;
+}
+
+.title_container {
+    min-width: 600px;
+    max-width: 70%;
+    margin: 20px auto;
+    font-size: 1.5em;
+    margin-left: 30%;
+}
+
+h4{margin: 0px;}
+
+.order{
+    padding-left: 20px;
+    padding-top: 10px;
+    font-size: 1.05em;
+    margin: 0px;
+    background-color: white;
+}
+
+.orders_container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.no_orders_p{
+    font-size:30px;
+    text-align: center;
+    margin-top: 100px;
+    font-weight: 400;
+}
+
+.orders_second_container{
+    background-color: rgb(24, 24, 34);
+    height: 200px;
+    position: relative;
+    z-index: 2;
+}
+
+.orders_filters_hello{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 1.1em;
+    font-family:'Trebuchet MS', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 700;
+    padding: 20px 10px;
+    background-color: #232f3e;
+    color: white;
+    border-bottom: 1px solid rgba(102, 102, 102, 0.425);
+    
+}
+
+
+.orders_filters_container{
+    text-align: center;
+}
+
+.orders_filter_title{
+    font-size: 1.1em;
+    padding: 10px 0px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.144);
+    font-weight: 500;
+}
+
+.orders_filters_input_date{
+    padding: 0px 25px;
+}
+
+.orders_filter_date_container{
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    padding: 40px 0px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.144);
+}
+
+.orders_filter_price_container{
+    display: flex;
+    justify-content: center;
+    gap: 1.22em;
+    padding: 40px 0px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.144);
+}
+
+.orders_filters_input_price{
+    width: 20%;
+}
+
+.empty_basket_container{
+    text-align: center;
+    height: 10em;
+}
+
+.empty_basket_icon{
+    height: 100%;
+    width: 10em;
+}
+

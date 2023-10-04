@@ -1,0 +1,54 @@
+.payment_checkout_items {
+    text-align: center;
+}
+
+
+.payment_section_one {
+    display: flex;
+    background-color: white;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.payment_info_left {
+    margin-left: 20px;
+    min-width: 270px;
+    max-width: 270px;
+}
+
+.payment_info_left > h4 {
+    margin-top: 12px;
+}
+
+.payment_info_right > h5 {
+    font-weight: 500;
+    margin: 17px 0px;
+
+}
+
+
+.payment_section_two {
+    display: flex;
+    background-color: white;
+    justify-content: flex-start;
+}
+
+.payment_section_one > .payment_info_right {
+    margin-left: 60px;
+}
+
+.payment_section_three {
+    display: flex;
+    background-color: white;
+    justify-content: flex-start;
+    margin-bottom: 10vh;
+}
+
+.payment_form {
+    min-width: 40vw;
+    margin-top: 25px;
+}
+
+.price_container{
+    margin: 15px 0px;
+}

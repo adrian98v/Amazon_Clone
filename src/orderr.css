@@ -1,0 +1,48 @@
+.order{
+    max-height: 300px;
+    padding-bottom: 20px;
+    min-width: 600px;
+    background-color: white;
+}
+.order_container{
+    display: flex;
+    width: 95%;
+    
+}
+
+.current_date{
+    font-size: 0.7em;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.order_rating{
+    display: inline-flex;
+    margin-left: 10px;
+}
+
+.order_rating > p {
+    margin: 0px;
+}
+
+.order_title{
+    margin: 0px;
+    font-weight: 600;
+    padding: 15px;
+}
+
+
+.order_price{
+    margin: 10px 0px 10px 15px;
+}
+
+.order_image_container{
+    width: 250px;
+    height: 250px;
+}
+
+.order_image{
+    height: 100%;
+    width: 250px;
+    object-fit: contain;
+}
