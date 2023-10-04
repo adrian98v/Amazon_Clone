@@ -15,6 +15,7 @@ function ProductPopUp({title, image}){
             setPopUpExit(true)
         }}>X</button>
 
+
         <img src={image} alt='product_popup_image' className='image_product_popup'/>
     
         <p className='product_popup_description'>{title}</p> 
