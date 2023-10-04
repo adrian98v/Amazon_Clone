@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.060acc66.css",
+    "main.js": "/static/js/main.19c74e67.js",
+    "static/js/787.ebd7646a.chunk.js": "/static/js/787.ebd7646a.chunk.js",
+    "static/media/Holder_61XzOG9rAwL._AC_SL1500_.jpg": "/static/media/Holder_61XzOG9rAwL._AC_SL1500_.6472d18e3c5ea93306ee.jpg",
+    "static/media/Acer_71+1lOl1Y1L._AC_SX679_.jpg": "/static/media/Acer_71+1lOl1Y1L._AC_SX679_.2dae4b9969b402ed2c52.jpg",
+    "static/media/71tK21fYkDL._AC_SX679_.jpg": "/static/media/71tK21fYkDL._AC_SX679_.7a54186110e4a95e3bbc.jpg",
+    "static/media/macbook-air-13-m1-2020-8-core-cpu-256-gb-space-gray.jpg": "/static/media/macbook-air-13-m1-2020-8-core-cpu-256-gb-space-gray.0cb5a5d1743831941e7b.jpg",
+    "static/media/61Y1P6uIRFL._AC_SX425_.jpg": "/static/media/61Y1P6uIRFL._AC_SX425_.b8677e1b71be12a8b55d.jpg",
+    "static/media/51QxA-98Q+L._AC_SX466_.jpg": "/static/media/51QxA-98Q+L._AC_SX466_.da77dedcfb79067322e3.jpg",
+    "static/media/81rZCg017gL._AC_SX425_.jpg": "/static/media/81rZCg017gL._AC_SX425_.c826cb54676575a28b2a.jpg",
+    "static/media/Eo_circle_green_checkmark.svg.png": "/static/media/Eo_circle_green_checkmark.svg.54ccbf23949aee613e4e.png",
+    "static/media/Tripod_61vRETKHpaL._AC_SX425_.jpg": "/static/media/Tripod_61vRETKHpaL._AC_SX425_.ecbd2a361c41da3f533a.jpg",
+    "static/media/Mouse_61yxQRsEPJL._AC_SX425_.jpg": "/static/media/Mouse_61yxQRsEPJL._AC_SX425_.edb5c9902c8c1d1a1d57.jpg",
+    "index.html": "/index.html",
+    "main.060acc66.css.map": "/static/css/main.060acc66.css.map",
+    "main.19c74e67.js.map": "/static/js/main.19c74e67.js.map",
+    "787.ebd7646a.chunk.js.map": "/static/js/787.ebd7646a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.060acc66.css",
+    "static/js/main.19c74e67.js"
+  ]
+}
