@@ -1,11 +1,11 @@
 const express = require('express')
 const Stripe = require('stripe')
 const cors = require('cors')
-const key = require('./keys.js')
+
 
 app = express()
 
-const stripe = new Stripe(key)
+const stripe = new Stripe('sk_test_51MtHEKIyp0hRR6qrcyGtrci4YfX8L5mbibLGrpTXk9jGupCla0K0lAG6mQCUdUTmAKQ1Lc8yOsDkzrlK8r1lcY7Z00mOwkpOsb')
 
 app.use(cors({origin: 'http://localhost:3000'}))
 
