@@ -79,6 +79,7 @@ function Payment(){
 
             setOrders()
             elements.getElement(CardElement).clear()
+            
             setProcessing(true)
             setBasketProducts([])
             setBasketCount(0)
