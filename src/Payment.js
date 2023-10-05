@@ -6,8 +6,8 @@ import { useStripe, useElements, CardElement } from "@stripe/react-stripe-js"
 import { useNavigate } from "react-router-dom"
 import { db } from './firebase.js'
 import { doc, getDoc, updateDoc, arrayUnion } from "firebase/firestore";
-
-
+import { REACT_APP_STRIPE_KEY } from "./keys.js"
+import Stripe from "stripe"
 
 function Payment(){
 
@@ -20,6 +20,9 @@ function Payment(){
     const [userCity, setUserCity] = useState("")
     const [userCountry, setUserCountry] = useState("")
     const [processing, setProcessing] = useState(true)
+
+
+    const stripeRef = new Stripe(REACT_APP_STRIPE_KEY)
     
     
     async function getUserLocation(){
@@ -66,15 +69,12 @@ function Payment(){
 
             setProcessing(false)
             const {id} = paymentMethod
-            await fetch("http://localhost:3001/server", {
-                method: "post",
-                headers: {
-                    'Content-type': 'application/json'
-                },
-                body: JSON.stringify({
-                    id,
-                    amount: basketPrice*100
-                })
+
+            await stripeRef.paymentIntents.create({
+                amount: basketPrice*100,
+                currency: 'USD',
+                payment_method: id,
+                confirm: true
             })
 
             setOrders()
