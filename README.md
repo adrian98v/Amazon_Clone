@@ -4,7 +4,7 @@
     </a>
     <hr>
     <h3>First Personal Development Proyect</h3>
-    <h4>Amazon Clone</h4>
+    <p>Amazon Clone</p>
 </div>
 <hr>
 <br>
@@ -12,7 +12,7 @@
 <a href="https://preeminent-bubblegum-2dff10.netlify.app/">Link to the page </a>
 
 <h4>Description:</h4>
-<h5>This repository showcases the code I have developed for my personal React project, an Amazon Clone that incorporates Stripe as the payment service.</h5>
+<p>This repository showcases the code I have developed for my personal React project, an Amazon Clone that incorporates Stripe as the payment service.</p>
 
 <hr>
 
