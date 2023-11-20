@@ -1,5 +1,5 @@
 <div align="center">
-    <a href="https://preeminent-bubblegum-2dff10.netlify.app/">
+    <a href="https://steady-khapse-b1299b.netlify.app/">
         <img src="https://raw.githubusercontent.com/adrian98v/Amazon_Clone/main/src/assets/Amazon_image.png" alt="Descripción de la imagen" >
     </a>
     <hr>
@@ -10,7 +10,7 @@
 <hr>
 <br>
 
-<a href="https://preeminent-bubblegum-2dff10.netlify.app/">Link to the page </a>
+<a href="https://steady-khapse-b1299b.netlify.app/">Link to the page </a>
 
 <h4>Description:</h4>
 <p>This repository showcases the code I have developed for my personal React project, an Amazon Clone that incorporates Stripe as the payment service.</p>
