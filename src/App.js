@@ -3,6 +3,7 @@ import Home from './Home.js'
 import Checkout from './Checkout.js'
 import Login from './Login.js'
 import Orders from './Orders.js'
+import Declined from './DeclinedPayment.js'
 import Successful from './SuccessfulPayment.js'
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import {createContext, useEffect, useState} from 'react'
@@ -97,6 +98,11 @@ function App() {
           <Header/>
           <Successful/></>
           }/>
+
+          <Route path='/declined' element={<>
+          <Header/>
+          <Declined/>
+          </>}/>
 
           <Route path="/" element={<>
             <Header/>

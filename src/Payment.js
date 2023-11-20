@@ -64,9 +64,9 @@ function Payment(){
             type:'card',
             card: elements.getElement(CardElement),
         })
-
+        
         if(!error) {
-
+           
             setProcessing(false)
             const {id} = paymentMethod
 
@@ -75,17 +75,26 @@ function Payment(){
                 currency: 'USD',
                 payment_method: id,
                 confirm: true
-            })
+            }).then(() => {
+                setProcessing(true)
+                setBasketProducts([])
+                setBasketCount(0)
+                setPaymentDoneAmount(basketPrice)
+                setBasketPrice(0)
+                history('/successful')
+
+            }).catch(res => {
+                if(res.type == "StripeCardError"){
+                    history('/declined')
+                }
+            }
+
+            )
 
             setOrders()
             elements.getElement(CardElement).clear()
             
-            setProcessing(true)
-            setBasketProducts([])
-            setBasketCount(0)
-            setPaymentDoneAmount(basketPrice)
-            setBasketPrice(0)
-            history('/successful')
+            
             
         }
 
