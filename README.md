@@ -19,3 +19,16 @@
 
 <h5><strong>Technologies:</strong> React, Javascript, HTML, CSS.</h5>
 
+<hr>
+
+<p>Test card numbers you can use: </p>
+<div align="center">
+    <img src="https://raw.githubusercontent.com/adrian98v/Amazon_Clone/main/src/assets/Card_Numbers_Brands.png">
+</div>
+<br>
+<hr>
+<br>
+<p>Declined cards: </p>
+<div align="center">
+    <img src="https://raw.githubusercontent.com/adrian98v/Amazon_Clone/main/src/assets/Declined_Cards.png">
+</div>
