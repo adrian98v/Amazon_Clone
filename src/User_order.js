@@ -11,6 +11,8 @@ function Order({minFilterPrice, maxFilterPrice, filterDate ,createdAt, title, pr
         if(rating < 10) stars.push(<p key={i}>⭐</p>)
     }
 
+   
+
     //  filtering orders
 
     if(!isNaN(minFilterPrice) && !isNaN(maxFilterPrice) && filterDate.length > 0){ 
@@ -43,8 +45,8 @@ function Order({minFilterPrice, maxFilterPrice, filterDate ,createdAt, title, pr
 
         // filtering products with highest and lowest price
 
-        if(!isNaN(minFilterPrice) && !isNaN(maxFilterPrice) && filterDate.length === 0){
-
+        if(!isNaN(minFilterPrice) && !isNaN(maxFilterPrice) && filterDate.length === 0){     
+               
             if(price >= minFilterPrice && price <= maxFilterPrice){
     
                 return <div className='order'>
@@ -149,6 +151,51 @@ function Order({minFilterPrice, maxFilterPrice, filterDate ,createdAt, title, pr
                         </div>
                         }
                     
+                }else{
+                    if(!isNaN(maxFilterPrice) && filterDate.length === 0 && price <= maxFilterPrice){
+ 
+                        return <div className='order'>
+                        <div className='current_date'>{time.format('LLLL')}</div>
+                    
+                            <div className='order_container'>
+                    
+                                <div className='order_image_container'>
+                                    <img className='order_image' src={image} alt='order_image'></img>
+                                </div>
+                                
+                                <div className='order_info_container'>
+                                    <p className='order_title'>{title}</p>
+                                    <div className='order_price'><small>$</small><strong>{price}</strong></div>
+                                    <div className='order_rating'>{stars}</div>
+                                </div>
+                    
+                            </div>
+                            
+                        </div>
+                        
+                    }else{
+                        if(!isNaN(minFilterPrice) && filterDate.length === 0 && price >= minFilterPrice){
+ 
+                            return <div className='order'>
+                            <div className='current_date'>{time.format('LLLL')}</div>
+                        
+                                <div className='order_container'>
+                        
+                                    <div className='order_image_container'>
+                                        <img className='order_image' src={image} alt='order_image'></img>
+                                    </div>
+                                    
+                                    <div className='order_info_container'>
+                                        <p className='order_title'>{title}</p>
+                                        <div className='order_price'><small>$</small><strong>{price}</strong></div>
+                                        <div className='order_rating'>{stars}</div>
+                                    </div>
+                        
+                                </div>
+                                
+                            </div>
+                        }
+                    }
                 }
             
                 // filtering all products

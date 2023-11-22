@@ -83,13 +83,7 @@ function Payment(){
                 setBasketPrice(0)
                 history('/successful')
 
-            }).catch(res => {
-                if(res.type == "StripeCardError"){
-                    history('/declined')
-                }
-            }
-
-            )
+            }).catch(() => {history('/declined')})
 
             setOrders()
             elements.getElement(CardElement).clear()

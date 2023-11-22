@@ -37,6 +37,7 @@ function App() {
   const [popUpExit, setPopUpExit] = useState(false)
   const [paymentDoneAmount, setPaymentDoneAmount] = useState(0)
 
+
   // Authorization observer used in order to know when a user is logged in
 
   useEffect(()=>{

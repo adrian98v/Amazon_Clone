@@ -12,9 +12,9 @@ function Orders(){
 
     const {user, userName} = useContext(DataContext)
     const [orders, setOrders] = useState([])
-    const [date, setDate] = useState([])
     const [minPriceFilter, setMinPriceFilter] = useState()
     const [maxPriceFilter, setMaxPriceFilter] = useState()
+    const [date, setDate] = useState([])
 
     useEffect(()=>{
 
@@ -41,6 +41,7 @@ function Orders(){
     }, [])
 
 
+
     if(orders.length > 0){
         return <div className='orders'>
         
@@ -58,7 +59,7 @@ function Orders(){
                         if(e.target.valueAsDate){
                             setDate([e.target.valueAsDate.getUTCDate(), e.target.valueAsDate.getUTCMonth()+1, e.target.valueAsDate.getUTCFullYear()])
                             
-                        }else{setDate([])}
+                        }else{setDate([]); console.log(date)}
                         
                         }}></input>
                 </div>
